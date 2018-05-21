@@ -7,8 +7,6 @@ import java.util.Scanner;
 
 public class BodiesOfWater
 {
-    List<Integer> bodies = new ArrayList<>();
-
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
