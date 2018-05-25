@@ -4,7 +4,7 @@ public class SpiralMatrixII
 {
     public static void main(String[] args)
     {
-        int n = 4;
+        int n = 0;
         int[][] matrix = generateMatrix(n);
         for (int i = 0; i < n; i++)
         {
@@ -15,6 +15,7 @@ public class SpiralMatrixII
             System.out.println();
         }
     }
+
     public static int[][] generateMatrix(int n)
     {
         int[][] matrix = new int[n][n];
@@ -27,12 +28,12 @@ public class SpiralMatrixII
         }
 
         int number = 1;
-        int i = 1, j = -1;
+        int i = -1, j = -1;
 
         while (number <= n * n)
         {
             // Going right
-            i--;
+            i++;
             j++;
             while (j < n)
             {
@@ -43,7 +44,6 @@ public class SpiralMatrixII
                 }
                 else
                 {
-                    j--;
                     break;
                 }
             }
@@ -60,7 +60,6 @@ public class SpiralMatrixII
                 }
                 else
                 {
-                    i--;
                     break;
                 }
             }
@@ -77,7 +76,6 @@ public class SpiralMatrixII
                 }
                 else
                 {
-                    j++;
                     break;
                 }
             }
@@ -90,11 +88,10 @@ public class SpiralMatrixII
                 if (matrix[i][j] == -1)
                 {
                     matrix[i][j] = number++;
-                    i++;
+                    i--;
                 }
                 else
                 {
-                    i--;
                     break;
                 }
             }
