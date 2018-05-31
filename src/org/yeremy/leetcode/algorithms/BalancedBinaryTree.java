@@ -1,5 +1,7 @@
 package org.yeremy.leetcode.algorithms;
 
+import sun.reflect.generics.tree.Tree;
+
 /*
 Given a binary tree, determine if it is height-balanced.
 
@@ -33,35 +35,23 @@ Return false.
  */
 public class BalancedBinaryTree
 {
-    private boolean result = true;
-
     public boolean isBalanced(TreeNode root)
     {
-        maxDepth(root);
-        return result;
+        if (checkHeight(root) == -1) return false;
+        else return true;
     }
 
-    private int maxDepth(TreeNode root)
+    private int checkHeight(TreeNode root)
     {
-        if (root == null)
-            return 0;
-        int l = maxDepth(root.left);
-        int r = maxDepth(root.right);
-        if (Math.abs(l - r) > 1)
-            result = false;
-        return 1 + Math.max(l, r);
-    }
+        if (root == null) return 0;
 
-    private class TreeNode
-    {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int val)
-        {
-            this.val = val;
-            left = null;
-            right = null;
-        }
+        int left = checkHeight(root.left);
+        if (left == -1) return -1;
+
+        int right = checkHeight(root.right);
+        if (right == -1) return -1;
+
+        if (Math.abs(left - right) > 1) return -1;
+        else return Math.max(left, right) + 1;
     }
 }
