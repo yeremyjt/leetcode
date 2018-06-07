@@ -17,8 +17,8 @@ public class KnightProbabilityInChessboard
             for (int i = 0; i < N; i++) {  // Filling out the board with count of valid moves per cell
                 for (int j = 0; j < N; j++) {
                      for (int[] move: moves) {
-                         int row = move[0];
-                         int col = move[1];
+                         int row = i + move[0];
+                         int col = j + move[1];
                          if (isValid(row, col, N))
                              currentValidCount[i][j] += validCount[row][col];
                      }
