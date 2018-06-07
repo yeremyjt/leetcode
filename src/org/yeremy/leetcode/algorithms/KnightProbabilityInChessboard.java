@@ -34,4 +34,3 @@ public class KnightProbabilityInChessboard
         return (row >= 0 && row < N && col >= 0 && col < N);
     }
 }
-}
