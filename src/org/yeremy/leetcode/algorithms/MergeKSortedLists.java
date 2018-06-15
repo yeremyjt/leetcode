@@ -5,6 +5,8 @@ import java.util.PriorityQueue;
 
 public class MergeKSortedLists {
     public ListNode mergeKLists(ListNode[] lists) {
+        if (lists == null || lists.length == 0) return null;
+
         PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.length, new Comparator<ListNode>() {
             @Override
             public int compare(ListNode node1, ListNode node2) {
@@ -19,12 +21,13 @@ public class MergeKSortedLists {
             if (node != null)
                 pq.add(node);
 
-        while (!pq.isEmpty()){
+        while (!pq.isEmpty()) {
             tail.next = pq.poll();
             tail = tail.next;
 
-            if (tail.next != null)
+            if (tail.next != null) {
                 pq.add(tail.next);
+            }
         }
 
         return dummy.next;
