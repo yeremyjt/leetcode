@@ -9,8 +9,7 @@ public class BinaryTreePruning {
         root.left = pruneTree(root.left);
         root.right = pruneTree(root.right);
 
-        if (root.val == 0 &&
-                (root.left == null) && (root.right == null)) {
+        if (root.val == 0 && root.left == null && root.right == null) {
             root = null;
         }
 
