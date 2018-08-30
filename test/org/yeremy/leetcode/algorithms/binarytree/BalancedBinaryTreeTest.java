@@ -1,6 +1,8 @@
-package org.yeremy.leetcode.algorithms;
+package org.yeremy.leetcode.algorithms.binarytree;
 
 import org.junit.Test;
+import org.yeremy.leetcode.algorithms.TreeNode;
+import org.yeremy.leetcode.algorithms.binarytree.BalancedBinaryTree;
 
 import static org.junit.Assert.*;
 

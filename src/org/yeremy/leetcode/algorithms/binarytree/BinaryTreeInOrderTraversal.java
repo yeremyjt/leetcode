@@ -1,4 +1,4 @@
-package org.yeremy.leetcode.algorithms;
+package org.yeremy.leetcode.algorithms.binarytree;
 
 import java.util.ArrayList;
 import java.util.List;
