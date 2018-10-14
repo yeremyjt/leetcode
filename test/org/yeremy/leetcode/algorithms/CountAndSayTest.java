@@ -10,6 +10,6 @@ public class CountAndSayTest
     public void testCountAndSay()
     {
         CountAndSay countAndSay = new CountAndSay();
-        assertEquals("312211", countAndSay.countAndSay(6));
+        assertEquals("314241", countAndSay.countAndSay(6));
     }
 }
