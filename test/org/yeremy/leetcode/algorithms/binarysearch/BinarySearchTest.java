@@ -1,4 +1,4 @@
-package org.yeremy.leetcode.algorithms.lessons.binarysearch;
+package org.yeremy.leetcode.algorithms.binarysearch;
 
 import org.junit.Test;
 
