@@ -1,4 +1,4 @@
-package org.yeremy.leetcode.algorithms;
+package org.yeremy.leetcode.algorithms.linkedlist;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -24,7 +24,6 @@ public class MergeIntervals {
             } else {
                 merged.getLast().end = Math.max(merged.getLast().end, interval.end);
             }
-
         }
 
         return merged;
