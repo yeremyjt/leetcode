@@ -1,7 +1,6 @@
 package org.yeremy.leetcode.algorithms.binarytree;
 
 import org.yeremy.leetcode.algorithms.TreeNode;
-import sun.reflect.generics.tree.Tree;
 
 /*
 Given a binary tree, determine if it is height-balanced.
