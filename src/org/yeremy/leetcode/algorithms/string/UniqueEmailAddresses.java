@@ -7,8 +7,8 @@ public class UniqueEmailAddresses {
     public int numUniqueEmails(String[] emails) {
         Set<String> emailsSet = new HashSet<>();
 
-        for (int i = 0; i < emails.length; i++) {
-            emailsSet.add(cleanEmail(emails[i]));
+        for (String email : emails) {
+            emailsSet.add(cleanEmail(email));
         }
 
         return emailsSet.size();
@@ -16,10 +16,12 @@ public class UniqueEmailAddresses {
 
     private String cleanEmail(String email) {
         String[] elements = email.split("@");
-        elements[0] = elements[0].replace(".", "");
-        if (elements[0].indexOf("+") != -1)
-            elements[0] = elements[0].substring(0, elements[0].indexOf("+"));
+        String localName = elements[0];
+        String domainName = elements[1];
+        localName = localName.replace(".", "");
+        if (localName.contains("+"))
+            localName = localName.substring(0, localName.indexOf("+"));
 
-        return elements[0] + "@" + elements[1];
+        return localName + "@" + domainName;
     }
 }
