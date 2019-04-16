@@ -1,4 +1,4 @@
-package org.yeremy.leetcode.algorithms;
+package org.yeremy.leetcode.algorithms.stack;
 
 import java.util.Stack;
 
