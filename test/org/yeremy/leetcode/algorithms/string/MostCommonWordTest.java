@@ -1,6 +1,7 @@
-package org.yeremy.leetcode.algorithms.hashmap;
+package org.yeremy.leetcode.algorithms.string;
 
 import org.junit.Test;
+import org.yeremy.leetcode.algorithms.string.MostCommonWord;
 
 import static org.junit.Assert.*;
 

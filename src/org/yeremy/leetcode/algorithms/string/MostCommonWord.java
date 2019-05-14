@@ -1,4 +1,4 @@
-package org.yeremy.leetcode.algorithms.hashmap;
+package org.yeremy.leetcode.algorithms.string;
 
 import java.util.HashMap;
 import java.util.HashSet;
