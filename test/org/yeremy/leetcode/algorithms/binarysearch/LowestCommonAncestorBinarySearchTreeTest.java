@@ -1,7 +1,8 @@
-package org.yeremy.leetcode.algorithms.binarytree;
+package org.yeremy.leetcode.algorithms.binarysearch;
 
 import org.junit.Test;
 import org.yeremy.leetcode.algorithms.TreeNode;
+import org.yeremy.leetcode.algorithms.binarysearch.LowestCommonAncestorBinarySearchTree;
 
 import static org.junit.Assert.*;
 
