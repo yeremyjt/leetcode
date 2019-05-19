@@ -1,4 +1,4 @@
-package org.yeremy.leetcode.algorithms.binarytree;
+package org.yeremy.leetcode.algorithms.binarysearch;
 
 import org.yeremy.leetcode.algorithms.TreeNode;
 
