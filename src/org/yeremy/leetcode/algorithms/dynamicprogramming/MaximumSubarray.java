@@ -13,11 +13,11 @@ If you have figured out the O(n) solution, try coding another solution using the
  */
 public class MaximumSubarray {
     public int maxSubArray(int[] A) {
-        int maxSoFar = A[0], maxEndingHere = A[0];
+        int max = A[0], maxSoFar = A[0];
         for (int i = 1; i < A.length; i++) {
-            maxEndingHere = Math.max(maxEndingHere + A[i], A[i]);
-            maxSoFar = Math.max(maxSoFar, maxEndingHere);
+            maxSoFar = Math.max(maxSoFar + A[i], A[i]);
+            max = Math.max(max, maxSoFar);
         }
-        return maxSoFar;
+        return max;
     }
 }
