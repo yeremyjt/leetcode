@@ -31,7 +31,7 @@ public class LetterCombinationsOfAPhoneNumber {
             String digit = Character.toString(digits.charAt(0));
             String letters = phone.get(digit);
             for (int i = 0; i < letters.length(); i++) {
-                String letter = Character.toString(phone.get(digit).charAt(i));
+                String letter = Character.toString(letters.charAt(i));
                 backtrack(combination + letter, digits.substring(1));
             }
         }
