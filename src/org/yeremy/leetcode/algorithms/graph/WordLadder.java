@@ -1,7 +1,5 @@
 package org.yeremy.leetcode.algorithms.graph;
 
-import javafx.util.Pair;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -17,14 +15,14 @@ class WordLadder {
 
         Map<String, List<String>> map = createMap(wordList, n);
         Set<String> visited = new HashSet<>();
-        Queue<Pair> queue = new LinkedList<>();
-        Pair<String, Integer> pair = new Pair(beginWord, 1);
-        queue.add(pair);
+        Queue<Word> queue = new LinkedList<>();
+        Word word = new Word(beginWord, 1);
+        queue.add(word);
 
         while(!queue.isEmpty()) {
-            Pair<String, Integer> curr = queue.poll();
-            int iteration = curr.getValue() + 1;
-            String currentWord = curr.getKey();
+            Word curr = queue.poll();
+            int iteration = curr.position + 1;
+            String currentWord = curr.word;
             for (int i = 0; i < n; i++) {
                 String newWord = currentWord.substring(0, i) + "*" + currentWord.substring(i + 1, n);
                 List<String> adjacents = map.getOrDefault(newWord, new ArrayList<>());
@@ -33,7 +31,7 @@ class WordLadder {
                         return iteration;
                     if (!visited.contains(adjacent)) {
                         visited.add(adjacent);
-                        queue.add(new Pair(adjacent, iteration));
+                        queue.add(new Word(adjacent, iteration));
                     }
                 }
             }
@@ -52,5 +50,15 @@ class WordLadder {
             }
         }
         return map;
+    }
+
+    private class Word {
+        String word;
+        int position;
+
+        public Word(String word, int position) {
+            this.word = word;
+            this.position = position;
+        }
     }
 }
