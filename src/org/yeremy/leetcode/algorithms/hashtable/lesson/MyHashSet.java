@@ -10,7 +10,6 @@ class MyHashSet {
 
     public void add(int key) {
         keys[hash(key)] = key;
-
     }
 
     public void remove(int key) {
