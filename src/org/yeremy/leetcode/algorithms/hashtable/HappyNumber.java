@@ -1,4 +1,4 @@
-package org.yeremy.leetcode.algorithms.hashtable.lesson;
+package org.yeremy.leetcode.algorithms.hashtable;
 
 import java.util.HashSet;
 import java.util.Set;

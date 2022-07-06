@@ -1,4 +1,4 @@
-package org.yeremy.leetcode.algorithms.hashtable.lesson;
+package org.yeremy.leetcode.algorithms.hashtable;
 
 class MyHashMap {
     private Integer[] keys;
