@@ -37,6 +37,9 @@ public class ContainsDuplicateII {
     - Calculate abs(i - j) <= k. We get i by the value in the map.
     - If true, return true, else update the map value to the latest index.
     this will make the subtraction more likely to be <= k.
+
+    Time complexity: O(n) since we loop through the array once.
+    Space complexity: O(min(n, k) since we create a hash table of at most n numbers, or whenever the substraction is lower than k.
      */
 
     // Map of number and its index.
