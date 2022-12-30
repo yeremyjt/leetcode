@@ -19,7 +19,7 @@ public class ValidSudoku {
             for (int j = 0; j < 9; j++) {
                 if (board[i][j] != '.') {
                     char element = board[i][j];
-                    int boxIndex = (i / 3) * 3 + j / 3;
+                    int boxIndex = (i / 3) * 3 + (j / 3);
 
                     if (rows[i].contains(element) || columns[j].contains(element) || boxes[boxIndex].contains(element))
                         return false;
