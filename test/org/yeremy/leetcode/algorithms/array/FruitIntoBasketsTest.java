@@ -1,5 +1,6 @@
 package org.yeremy.leetcode.algorithms.array;
 
+import org.yeremy.leetcode.algorithms.array.FruitIntoBaskets;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -1,7 +1,5 @@
 package org.yeremy.leetcode.algorithms.binarytree;
 
-import org.yeremy.leetcode.algorithms.TreeNode;
-
 public class BinaryTreePruning {
     public TreeNode pruneTree(TreeNode root) {
         if (root == null) return null;

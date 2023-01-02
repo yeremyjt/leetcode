@@ -1,7 +1,5 @@
 package org.yeremy.leetcode.algorithms.binarytree;
 
-import org.yeremy.leetcode.algorithms.TreeNode;
-
 public class ValidateBinarySearchTree {
     public boolean helper(TreeNode node, Integer lower, Integer upper) {
         if (node == null) return true;

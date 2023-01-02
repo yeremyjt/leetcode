@@ -1,5 +1,7 @@
 package org.yeremy.leetcode.algorithms.graph;
 
+
+import org.yeremy.leetcode.algorithms.graph.WordLadder;
 import org.junit.Test;
 
 import java.util.Arrays;

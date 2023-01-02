@@ -1,11 +1,6 @@
 package org.yeremy.leetcode.algorithms.binarytree;
 
-import org.yeremy.leetcode.algorithms.TreeNode;
-
-import java.util.Arrays;
-import java.util.Collections;
-
-class BinaryTreeMaximumPathSum {
+public class BinaryTreeMaximumPathSum {
     private int maxSum = Integer.MIN_VALUE;
 
     public int maxPathSum(TreeNode root) {

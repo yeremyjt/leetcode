@@ -1,7 +1,5 @@
 package org.yeremy.leetcode.algorithms.binarytree;
 
-import org.yeremy.leetcode.algorithms.TreeNode;
-
 import java.util.*;
 
 public class SerializeAndDeserializeBinaryTree {

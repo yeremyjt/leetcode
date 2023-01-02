@@ -1,10 +1,10 @@
 package org.yeremy.leetcode.algorithms.binarytree;
 
-import org.junit.Test;
-import org.yeremy.leetcode.algorithms.TreeNode;
 import org.yeremy.leetcode.algorithms.binarytree.LowestCommonAncestorBinarySearchTree;
+import org.yeremy.leetcode.algorithms.binarytree.TreeNode;
+import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class LowestCommonAncestorBinarySearchTreeTest {
     @Test

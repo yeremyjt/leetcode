@@ -1,5 +1,8 @@
 package org.yeremy.leetcode.algorithms;
 
+import org.yeremy.leetcode.algorithms.ListNode;
+
+import org.yeremy.leetcode.algorithms.linkedlist.MergeKSortedLists;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

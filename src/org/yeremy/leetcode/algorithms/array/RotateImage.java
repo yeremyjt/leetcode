@@ -1,6 +1,6 @@
 package org.yeremy.leetcode.algorithms.array;
 
-class RotateImage {
+public class RotateImage {
     public void rotate(int[][] matrix) {
         int n = matrix.length;
         int temp1, temp2, row, col;

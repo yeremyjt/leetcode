@@ -1,7 +1,7 @@
 package org.yeremy.leetcode.algorithms.dynamicprogramming;
 
-import org.junit.Test;
 import org.yeremy.leetcode.algorithms.dynamicprogramming.MaximumSubarray;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 

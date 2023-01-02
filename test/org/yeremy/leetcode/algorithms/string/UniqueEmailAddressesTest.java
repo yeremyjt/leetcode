@@ -1,5 +1,6 @@
 package org.yeremy.leetcode.algorithms.string;
 
+import org.yeremy.leetcode.algorithms.string.UniqueEmailAddresses;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

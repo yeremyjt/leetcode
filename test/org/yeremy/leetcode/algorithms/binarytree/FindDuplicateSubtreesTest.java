@@ -5,6 +5,8 @@ import static org.junit.Assert.assertTrue;
 import java.util.Arrays;
 import java.util.List;
 
+import org.yeremy.leetcode.algorithms.binarytree.FindDuplicateSubtrees;
+import org.yeremy.leetcode.algorithms.binarytree.TreeNode;
 import org.junit.Test;
 
 public class FindDuplicateSubtreesTest {

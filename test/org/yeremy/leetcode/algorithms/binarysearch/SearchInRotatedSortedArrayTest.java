@@ -1,5 +1,6 @@
 package org.yeremy.leetcode.algorithms.binarysearch;
 
+import org.yeremy.leetcode.algorithms.binarysearch.SearchInRotatedSortedArray;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

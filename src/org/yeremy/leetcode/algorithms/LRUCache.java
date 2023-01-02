@@ -3,7 +3,7 @@ package org.yeremy.leetcode.algorithms;
 import java.util.HashMap;
 import java.util.Map;
 
-class LRUCache
+public class LRUCache
 {
     private Map<Integer, Node> map;
     private Node head;
