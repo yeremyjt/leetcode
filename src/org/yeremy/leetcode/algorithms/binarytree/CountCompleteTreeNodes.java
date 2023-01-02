@@ -1,7 +1,5 @@
 package org.yeremy.leetcode.algorithms.binarytree;
 
-import org.yeremy.leetcode.algorithms.TreeNode;
-
 public class CountCompleteTreeNodes {
     public int countNodes(TreeNode root) {
         // if the tree is empty

@@ -1,7 +1,5 @@
 package org.yeremy.leetcode.algorithms.binarytree;
 
-import org.yeremy.leetcode.algorithms.TreeNode;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

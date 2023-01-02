@@ -1,5 +1,6 @@
 package org.yeremy.leetcode.algorithms.dynamicprogramming;
 
+import org.yeremy.leetcode.algorithms.dynamicprogramming.TrappingRainWater;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

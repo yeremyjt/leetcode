@@ -1,5 +1,6 @@
 package org.yeremy.leetcode.algorithms.hashtable;
 
+import org.yeremy.leetcode.algorithms.hashtable.IsomorphicStrings;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

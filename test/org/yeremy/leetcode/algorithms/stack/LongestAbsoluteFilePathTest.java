@@ -1,5 +1,6 @@
 package org.yeremy.leetcode.algorithms.stack;
 
+import org.yeremy.leetcode.algorithms.stack.LongestAbsoluteFilePath;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

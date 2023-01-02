@@ -1,5 +1,6 @@
 package org.yeremy.leetcode.algorithms;
 
+import org.yeremy.leetcode.algorithms.KnightProbabilityInChessboard;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

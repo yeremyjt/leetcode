@@ -1,5 +1,6 @@
 package org.yeremy.leetcode.algorithms.backtracking;
 
+import org.yeremy.leetcode.algorithms.backtracking.LetterCombinationsOfAPhoneNumber;
 import org.junit.Test;
 
 import java.util.List;

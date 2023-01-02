@@ -1,7 +1,7 @@
 package org.yeremy.leetcode.algorithms.string;
 
-import org.junit.Test;
 import org.yeremy.leetcode.algorithms.string.MostCommonWord;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 

@@ -1,7 +1,8 @@
 package org.yeremy.leetcode.algorithms.binarytree;
 
+import org.yeremy.leetcode.algorithms.binarytree.BinaryTreeLevelOrderTraversalTwo;
+import org.yeremy.leetcode.algorithms.binarytree.TreeNode;
 import org.junit.Test;
-import org.yeremy.leetcode.algorithms.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

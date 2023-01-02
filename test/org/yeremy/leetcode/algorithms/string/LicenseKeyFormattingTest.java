@@ -1,5 +1,6 @@
 package org.yeremy.leetcode.algorithms.string;
 
+import org.yeremy.leetcode.algorithms.string.LicenseKeyFormatting;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

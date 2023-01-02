@@ -41,14 +41,4 @@ public class BinaryTreeInOrderTraversal {
 
         return inorderTraversalList;
     }
-
-    private class TreeNode {
-        TreeNode left;
-        TreeNode right;
-        int val;
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
-    }
 }

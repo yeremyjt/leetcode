@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
-class WordLadder {
+public class WordLadder {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         int n = beginWord.length();
 

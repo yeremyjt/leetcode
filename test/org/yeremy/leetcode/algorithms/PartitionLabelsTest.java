@@ -1,5 +1,6 @@
 package org.yeremy.leetcode.algorithms;
 
+import org.yeremy.leetcode.algorithms.PartitionLabels;
 import org.junit.Test;
 
 import java.util.List;

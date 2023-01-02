@@ -1,5 +1,6 @@
 package org.yeremy.leetcode.algorithms.graph;
 
+import org.yeremy.leetcode.algorithms.graph.NumberOfIslands;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
