@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class NumberOfProvincesTest {
+public class NumberOfProvincesDisjointSetTest {
 
     @Test
     public void findCircleNum() {
@@ -18,7 +18,7 @@ public class NumberOfProvincesTest {
         isConnected[2][0] = 0;
         isConnected[2][1] = 0;
         isConnected[2][2] = 1;
-        NumberOfProvinces numberOfProvinces = new NumberOfProvinces();
+        NumberOfProvincesDisjointSet numberOfProvinces = new NumberOfProvincesDisjointSet();
         int actual = numberOfProvinces.findCircleNum(isConnected);
         int expected = 2;
         assertEquals(expected, actual);
