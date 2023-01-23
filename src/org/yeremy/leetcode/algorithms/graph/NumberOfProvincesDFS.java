@@ -28,7 +28,7 @@ isConnected[i][j] is 1 or 0.
 isConnected[i][i] == 1
 isConnected[i][j] == isConnected[j][i]
  */
-public class NumberOfProvinces {
+public class NumberOfProvincesDFS {
     public int findCircleNum(int[][] isConnected) {
         int provinces = 0;
         int[] visited = new int[isConnected.length];
