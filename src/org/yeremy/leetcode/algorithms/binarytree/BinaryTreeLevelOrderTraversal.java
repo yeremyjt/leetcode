@@ -6,23 +6,48 @@ import java.util.List;
 import java.util.Queue;
 
 public class BinaryTreeLevelOrderTraversal {
-    public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> lists = new ArrayList<>();
+    List<List<Integer>> levels = new ArrayList<>();
+
+    public List<List<Integer>> levelOrderIterative(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();
 
-        if (root == null) return lists;
+        if (root == null) return levels;
 
-        queue.offer(root);
+        queue.add(root);
+        int level = 0;
+
         while(!queue.isEmpty()) {
+            levels.add(new ArrayList<>());
             int levelCount = queue.size();
-            List<Integer> list = new ArrayList<>();
+
             for (int i = 0; i < levelCount; i++) {
-                if (queue.peek().left != null) queue.offer(queue.peek().left);
-                if (queue.peek().right != null) queue.offer(queue.peek().right);
-                list.add(queue.poll().val);
+                TreeNode node = queue.remove();
+                levels.get(level).add(node.val);
+
+                if (node.left != null) queue.add(node.left);
+                if (node.right != null) queue.add(node.right);                
             }
-            lists.add(list);
+            level++;
         }
-        return lists;
+
+        return levels;
+    }
+
+    public List<List<Integer>> levelOrderRecursive(TreeNode root) {        
+        if (root == null) return levels;
+
+        bfs(root, 0);
+        return levels;
+    }
+
+    private void bfs(TreeNode node, int level) {
+        if (levels.size() == level) {
+            levels.add(new ArrayList<>());
+        }
+
+        levels.get(level).add(node.val);
+
+        if (node.left != null) bfs(node.left, level + 1);
+        if (node.right != null) bfs(node.right, level + 1);
     }
 }
